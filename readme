@@ -1,0 +1,6 @@
+pip installscapy/
+ time/
+ optparse/
+ manuf/
+ import
+ python mitm.py -g "getway" -t "target"
