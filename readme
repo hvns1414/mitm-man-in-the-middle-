@@ -1,6 +1,51 @@
-pip installscapy/
- time/
- optparse/
- manuf/
- import
- python mitm.py -g "getway" -t "target"
+# 🕵️‍♂️ Python Man-in-the-Middle (MITM) Tool
+
+A lightweight Python script designed to perform ARP poisoning-based Man-in-the-Middle (MITM) attacks on local networks. This tool enables interception and analysis of network traffic between a target device and the gateway.
+
+---
+
+## ⚙️ Features
+
+- **ARP Poisoning**: Redirects traffic between a specified target and gateway.
+- **MAC Address Resolution**: Utilizes the `manuf` library to identify device manufacturers.
+- **Command-Line Interface**: Offers flexible options for specifying targets and gateways.
+
+---
+
+## 🛠️ Installation
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/hvns1414/mitm-man-in-the-middle-.git
+   cd mitm-man-in-the-middle-
+Install Dependencies:
+Ensure you have Python 3 installed. Then, install the required Python packages:
+
+bash
+Kopyala
+Düzenle
+pip install scapy manuf
+🚀 Usage
+Run the script with the appropriate options:
+
+bash
+Kopyala
+Düzenle
+python mitm.py -g <gateway_ip> -t <target_ip>
+Options:
+
+-g, --gateway: IP address of the network gateway.
+
+-t, --target: IP address of the target device.
+
+Example:
+
+bash
+Kopyala
+Düzenle
+python mitm.py -g 192.168.1.1 -t 192.168.1.100
+This command initiates an ARP poisoning attack between the specified gateway and target.
+
+⚠️ Disclaimer
+This tool is intended for educational and authorized penetration testing purposes only. Unauthorized use on networks without explicit permission is illegal and unethical. The developer is not responsible for any misuse of this tool.
+
